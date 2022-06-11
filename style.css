@@ -1,0 +1,82 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+
+
+html, body {
+  height: 100%;
+  width: 100%;
+  font-family: 'Roboto', sans-serif;
+ 
+}
+.phone{
+  position: relative;
+  width: 360px;
+  height: 640px;
+  margin: auto;
+  border: 16px black solid;
+  border-top-width: 45px;
+  border-bottom-width: 53px;
+  border-radius: 36px;
+}
+.phone:after {
+  content: '';
+  display: block;
+  width: 35px;
+  height: 35px;
+  position: absolute;
+  left: 50%;
+  bottom: -65px;
+  transform: translate(-50%, -50%);
+  background: #333;
+  border-radius: 50%;
+}
+.phone:before {
+  content: '';
+  display: block;
+  width: 60px;
+  height: 5px;
+  position: absolute;
+  top: -30px;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: #333;
+  border-radius: 10px;
+}
+.phone container{
+  width: 360px;
+  height: 640px;
+  background: #1059ea;
+}
+
+
+
+.button{
+  padding: 20px;
+  margin: 3px 5px;
+  border: 3px solid black;
+  border-radius: 10px;
+  cursor:pointer;
+  width:60px;
+  font-size: 1.2rem;
+}
+.button:hover{
+  background: #1779ba;
+}
+.row{
+  margin: 3px 0px;
+}
+.row input{
+  margin:0px;
+  padding: 12px;
+  width:18vw;
+  height: 2vw;
+  border:2px solid black;
+  border-radius: 3px;
+}
+
+@media screen and (min-width: 1500px) {
+ 
+
+  .row input{
+    width:69vw;
+  }
+}
